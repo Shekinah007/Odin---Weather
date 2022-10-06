@@ -6,15 +6,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather</title>
     <link href="styles.css" rel="stylesheet">
-    <script src="script.js" defer></script>
+    <script scr="components.js" defer ></script>
+    <script src="script.js" defer type="module"></script>
+    <script src="https://use.fontawesome.com/452826394c.js"></script>
 </head>
 <body>
-    <main>
-        <h1> What's the Weather?</h1>
+    <h1> What's the Weather?</h1>
+    <!-- <div style=""><iframe src="https://giphy.com/embed/l0MYOJCCE8yTfcwSY" width="100%" height="100%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div><p><a href="https://giphy.com/gifs/reactionseditor-storm-storming-l0MYOJCCE8yTfcwSY">via GIPHY</a></p> -->
 
-        <form class="request">
-            <input type="text">
-        </form>
+    <main>
+
+            <form class="request">
+                <!-- <i class="fa fa-2x fa-spinner"></i> -->
+                <label for ="location-input"></label>
+                <input type="text" id="location-input" placeholder="City" >
+                <button class="search">Go</button>
+                <img src="" class="flag">
+                <h3 class="country"></h3>
+                <p class="cityP">City: <span class="city"></span> </p> 
+            </form>
+            <div class="weather-info">
+                <div>
+                    <h2 class="main"></h2>
+                    <p class="description"></p>
+                    <img class="icon" />
+                </div>
+                <div class="extra-details">
+                    <p>Temperature:  <span class="temp"></span>K</p>
+                    <p>Wind:  <span class="wind"></span>m/s</p>
+                    <p>Humidity:  <span class="humidity"></span>%</p>
+                    <p>Pressure:  <span class="pressure"></span>hPa</p>
+                    <p>Visibility:  <span class="visibility"></span>m</p>
+                    <p>Feels like:  <span class="feels_like"></span>K</p>
+                </div>
+        </div>
+
     </main>
 </body>
 </html>

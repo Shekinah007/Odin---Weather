@@ -70,6 +70,15 @@ form {
     height: 100px;
   }
 
+  input  {
+   height: 10px;
+   width: 200px;
+   padding: 5px;
+   text-align: center;
+   border-radius: 2px;
+   border: none;
+  }
+
  .weather-info {
     height: 0;
     padding: 50px;
@@ -77,8 +86,9 @@ form {
     overflow: hidden;
     /* opacity: 0.7; */
     transition: 0.5s;
-    background-color: rgba(2, 2, 2, 0.464) ;
-    /* background-image: url("images/giphy.gif"); */
+    /* background-color: rgba(2, 2, 2, 0.464) ; */
+    background-image: url("images/giphy.gif");
+    background-image: linear-gradient(to right, rgb(0, 0, 0), rgb(0, 0, 0, 0));
     background-size: cover;
     color: white;
     position: fixed;

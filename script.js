@@ -56,7 +56,7 @@ async function getWeather(lat, lon) {
 }
 
 fetch(
-  `http://api.openweathermap.org/geo/1.0/direct?q=London&limit=5&appid=${weatherKey}`
+  `https://api.openweathermap.org/geo/1.0/direct?q=London&limit=5&appid=${weatherKey}`
 )
   .then((res) => res.json())
   .then((data) => console.log("Coord: ", data));
@@ -68,7 +68,7 @@ async function getLocation(event) {
 
   try {
     let response = await fetch(
-      `http://api.openweathermap.org/geo/1.0/direct?q=${location}&limit=5&appid=${weatherKey}`
+      `https://api.openweathermap.org/geo/1.0/direct?q=${location}&limit=5&appid=${weatherKey}`
     );
     let data = await response.json();
     let country = regionNames.of(data[0].country);

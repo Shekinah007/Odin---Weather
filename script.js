@@ -29,10 +29,12 @@ function populateWeatherInfo(weather) {
   array.forEach((item) => {
     console.log(item);
     if (item.className == "icon") {
-      item.src = `http://openweathermap.org/img/wn/${weather.icon}@2x.png`;
+      item.src = `https://openweathermap.org/img/wn/${weather.icon}@2x.png`;
     } else item.innerText = weather[item.className];
   });
 }
+
+// /////////////////////////////////////////////////////////////////////
 
 const body = document.querySelector("body");
 const cityP = document.querySelector(".cityP");
